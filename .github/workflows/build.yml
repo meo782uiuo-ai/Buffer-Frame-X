@@ -38,7 +38,7 @@ jobs:
           python3 - <<'PY'
           import json
           m = json.load(open('mod.json'))
-          m['geode'] = 'v5.11.2'
+          m['geode'] = '5.11.2'
           m['gd'] = {p: '2.2081' for p in ('win', 'android', 'mac', 'ios')}
           json.dump(m, open('mod.json', 'w'), indent=2)
           PY
