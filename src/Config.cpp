@@ -19,8 +19,8 @@ namespace bf {
         enabled = m->getSavedValue<bool>("enabled", true);
         stage = std::clamp(m->getSavedValue<int>("stage", 3), 0, kStageCount - 1);
         adaptive = m->getSavedValue<bool>("adaptive", false);
-        margin = std::clamp(m->getSavedValue<int>("margin", 28), 10, 90);
-        budgetMs = std::clamp(m->getSavedValue<int>("budget-ms", 60), 10, 250);
+        margin = std::clamp(m->getSavedValue<int>("margin-v2", 12), 10, 90);
+        budgetMs = std::clamp(m->getSavedValue<int>("budget-v2", 140), 10, 250);
         hud = m->getSavedValue<bool>("hud", true);
         notice = m->getSavedValue<bool>("notice", true);
         for (int s = 0; s < kCustomSlots; ++s) {
@@ -36,8 +36,8 @@ namespace bf {
         m->setSavedValue<bool>("enabled", enabled);
         m->setSavedValue<int>("stage", stage);
         m->setSavedValue<bool>("adaptive", adaptive);
-        m->setSavedValue<int>("margin", margin);
-        m->setSavedValue<int>("budget-ms", budgetMs);
+        m->setSavedValue<int>("margin-v2", margin);
+        m->setSavedValue<int>("budget-v2", budgetMs);
         m->setSavedValue<bool>("hud", hud);
         m->setSavedValue<bool>("notice", notice);
         for (int s = 0; s < kCustomSlots; ++s) {
