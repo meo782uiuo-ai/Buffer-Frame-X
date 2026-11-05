@@ -89,12 +89,12 @@ namespace bf {
     }
 
     void BufferMenu::addStepper(
-        float y, int value, int lo, int hi, int small, int big, bool editable,
+        float y, int value, int lo, int hi, int stepS, int stepB, bool editable,
         std::function<void(int)> setter, std::string const& shown
     ) {
         struct Spec { int delta; float x; float w; };
         Spec specs[4] = {
-            {-big, 209.f, 26.f}, {-small, 237.f, 22.f}, {small, 307.f, 22.f}, {big, 335.f, 26.f}
+            {-stepB, 209.f, 26.f}, {-stepS, 237.f, 22.f}, {stepS, 307.f, 22.f}, {stepB, 335.f, 26.f}
         };
         for (auto const& s : specs) {
             auto spr = ui::pill(
