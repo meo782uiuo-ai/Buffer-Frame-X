@@ -1,0 +1,15 @@
+build/
+build-*/
+.vscode/
+.idea/
+.cache/
+.DS_Store
+compile_commands.json
+CMakeUserPresets.json
+
+*.geode
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
