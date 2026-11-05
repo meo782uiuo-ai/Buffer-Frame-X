@@ -41,7 +41,7 @@ namespace bf {
         );
         void addStatic(CCNode* node, float x, float y);
         void addStepper(
-            float y, int value, int lo, int hi, int small, int big, bool editable,
+            float y, int value, int lo, int hi, int stepS, int stepB, bool editable,
             std::function<void(int)> setter, std::string const& shown = ""
         );
         void addToggle(
