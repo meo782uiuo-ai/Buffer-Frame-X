@@ -50,8 +50,8 @@ namespace bf {
         bool enabled = true;
         int stage = 3;          // 0..7 prefabricadas, 8..10 personalizadas
         bool adaptive = false;
-        int margin = 28;        // ticks que debe sobrevivir despues del punto de muerte
-        int budgetMs = 60;      // tiempo maximo de busqueda por muerte
+        int margin = 12;        // ticks que debe sobrevivir despues del punto de muerte
+        int budgetMs = 140;      // tiempo maximo de busqueda por muerte
         bool hud = true;
         bool notice = true;
         // [slot][0] = todos los modos, [slot][1 + modo] = valor del modo (0 = igual que todos)
